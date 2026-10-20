@@ -1,0 +1,5 @@
+Process,Arrival Time,Burst Time,Priority
+P1,0,6,3
+P2,1,4,2
+P3,2,2,1
+P4,3,3,4
