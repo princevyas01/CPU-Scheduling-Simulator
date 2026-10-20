@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0d19;
+  --bg-gradient: radial-gradient(circle at 85% 5%, rgba(124, 92, 255, 0.15) 0%, transparent 45%),
+                 radial-gradient(circle at 15% 95%, rgba(56, 207, 220, 0.08) 0%, transparent 45%);
+  --panel: #151a2c;
+  --panel-card: #1c233a;
+  --panel-lighter: #242c48;
+  --border: #2b3450;
+  --border-focus: #7c5cff;
+  --accent: #7c5cff;
+  --cyan: #38cfdc;
+  --amber: #ffb84d;
+  --rose: #ff6880;
+  --green: #4ade80;
+  --blue: #6096ff;
+  --text: #ecf0fc;
+  --text-muted: #96a0bc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+code, kbd, samp, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1322;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b3450;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4668;
+}
+
+/* Subtle glowing outlines & cards */
+.card-glow {
+  background: #151a2c;
+  border: 1px solid #2b3450;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.card-glow:hover {
+  border-color: #3b4668;
+}
+
+/* Metric card gradient overlay */
+.metric-card-bg {
+  background: linear-gradient(180deg, rgba(28, 35, 58, 0.8) 0%, rgba(21, 26, 44, 0.95) 100%);
+  border: 1px solid #2b3450;
+  border-radius: 12px;
+}
+
+/* Gantt Hatching for Context Switch */
+.gantt-cs {
+  background: repeating-linear-gradient(
+    45deg,
+    #ff6880,
+    #ff6880 6px,
+    #b33d52 6px,
+    #b33d52 12px
+  );
+}
+
+.gantt-idle {
+  background: repeating-linear-gradient(
+    45deg,
+    #2b3450,
+    #2b3450 8px,
+    #1d2438 8px,
+    #1d2438 16px
+  );
+}
