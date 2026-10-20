@@ -1,0 +1,6 @@
+Process,Arrival Time,Burst Time,Priority
+P_LowPriority,0,10,6
+P_Urgent1,1,3,1
+P_Urgent2,4,3,1
+P_Urgent3,7,3,1
+P_Urgent4,10,3,1
