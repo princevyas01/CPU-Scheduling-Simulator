@@ -22,3 +22,8 @@ Thumbs.db
 .vscode/
 *.iml
 target/
+
+# Node.js / React Frontend
+node_modules/
+dist/
+.vite/
