@@ -4,7 +4,7 @@ import { SimulationResult } from '../types/scheduler';
 interface GanttChartProps {
   result: SimulationResult | null;
   cursor: number;
-  setCursor: (c: number) => void;
+  setCursor: React.Dispatch<React.SetStateAction<number>>;
   onSelectEventTime?: (t: number) => void;
 }
 
